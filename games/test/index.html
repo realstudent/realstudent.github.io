@@ -6,26 +6,12 @@
         <!--
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         -->
-
         <meta name="viewport" content="width=device-width,minimal-ui, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=0">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<title>BeachDrive 0.1.0</title>
 
 		<style>
-            /*
-            canvas {
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-                outline: none;
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            }
-            */
-
 			.canvas-app-container {
 			  background: rgb(255,255,255) no-repeat center url("try_game.png");
 			  /* A positioned parent for loading visuals */
@@ -85,10 +71,6 @@
             }
 
 		</style>
-        <!-- disables the text select when dragging a mouse cursor -->
-        <!--
-        style="user-select: none; -webkit-user-select: none; -moz-user-select: none;"
-        -->
 
 	</head>
 
@@ -97,9 +79,9 @@
 
 	<div id="app-container" class="canvas-app-container">
         <!--
-	    <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="480" height="720"></canvas>
-        -->
         <canvas id="canvas" class="canvas-app-canvas" tabindex="1"></canvas>
+        -->
+        <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="480" height="720"></canvas>
 	</div>
 
     <script type='text/javascript' src="dmloader.js"></script>
