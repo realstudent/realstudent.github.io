@@ -25,5 +25,8 @@ immersive_mode = 1
 package = com.drunk.chip.robotics.beachdrive
 
 [html5]
-include_dev_tool = 1
+include_dev_tool = 0
+
+[profiler]
+track_cpu = 0
 
