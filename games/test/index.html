@@ -6,7 +6,10 @@
         <!--
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=0">
+        <!--
         <meta name="viewport" content="width=device-width,minimal-ui, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=0">
+        -->
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<title>BeachDrive 0.1.0</title>
@@ -99,9 +102,9 @@
 
         Module.runApp("canvas", extra_params);
 
+        /*
         function resize_game_canvas() {
             var dpi=window.devicePixelRatio || 1
-            //var dpi =1
             var width=window.innerWidth;
             var height=window.innerHeight;
             var aspect=width/height
@@ -117,6 +120,17 @@
             window.console.log("width: " + game_canvas.width + " > "+ game_canvas.style.width)
             window.console.log("height:" + game_canvas.height + " > "+ game_canvas.style.height)
 		}
+        */
+
+        function resize_game_canvas() {
+            var app_continer = document.getElementById('app-container');
+            app_continer.style.width = window.innerWidth;
+            app_continer.style.height = window.innerHeight;
+
+            var game_canvas = document.getElementById('canvas');
+            game_canvas.width = window.innerWidth;
+            game_canvas.height = window.innerHeight;
+        }
 
 		resize_game_canvas();
 
