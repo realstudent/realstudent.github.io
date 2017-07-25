@@ -31,3 +31,6 @@ htmlfile = /main/template/index_template.html
 [profiler]
 track_cpu = 0
 
+[graphics]
+texture_profiles = /main/template/main.texture_profiles
+

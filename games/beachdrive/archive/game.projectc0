@@ -26,6 +26,7 @@ package = com.drunk.chip.robotics.beachdrive
 
 [html5]
 include_dev_tool = 0
+htmlfile = /main/template/index_template.html
 
 [profiler]
 track_cpu = 0
