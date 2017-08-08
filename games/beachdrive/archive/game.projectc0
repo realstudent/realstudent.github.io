@@ -1,0 +1,36 @@
+[project]
+title = BeachDrive
+version = 0.1.0
+custom_resources = main/content/
+
+[bootstrap]
+main_collection = /main/loader.collectionc
+
+[input]
+game_binding = /input/game.input_bindingc
+
+[display]
+width = 480
+height = 720
+
+[physics]
+scale = 0.02
+debug = 0
+
+[script]
+shared_state = 1
+
+[android]
+immersive_mode = 1
+package = com.drunk.chip.robotics.beachdrive
+
+[html5]
+include_dev_tool = 0
+htmlfile = /main/template/index_template.html
+
+[profiler]
+track_cpu = 0
+
+[graphics]
+texture_profiles = /main/template/main.texture_profiles
+
