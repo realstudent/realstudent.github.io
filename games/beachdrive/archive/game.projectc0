@@ -21,12 +21,18 @@ debug = 0
 shared_state = 1
 
 [android]
-immersive_mode = 1
+immersive_mode = 0
 package = com.drunk.chip.robotics.beachdrive
+app_icon_36x36 = /main/images/icons/icon036.png
+app_icon_48x48 = /main/images/icons/icon048.png
+app_icon_72x72 = /main/images/icons/icon072.png
+app_icon_96x96 = /main/images/icons/icon096.png
+app_icon_144x144 = /main/images/icons/icon144.png
+app_icon_192x192 = /main/images/icons/icon192.png
 
 [html5]
 include_dev_tool = 0
-htmlfile = /main/template/index_template.html
+htmlfile = 
 
 [profiler]
 track_cpu = 0
