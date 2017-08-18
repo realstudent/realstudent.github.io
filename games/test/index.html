@@ -6,18 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>BeachDrive 0.1.0</title>
+		<title>Beach Drive 1.0.0</title>
+
 		<style>
 			.canvas-app-container {
 			  background: rgb(255,255,255) no-repeat center url("try_game.png");
-			  /* A positioned parent for loading visuals */
-			  position: relative;
-			}
+			  /* A positioned parent for loading visuals 
+			  position: relative; */
 
-			.canvas-app-container:-webkit-full-screen {
-			  /* Auto width and height in Safari/Chrome fullscreen. */
-			  width: auto;
-			  height: auto;
+	                width: 100%;
+	                height: 100%;
+	                position: absolute;
+	                align-items: center;
+	                justify-content: center;
+	                overflow: hidden;
+
 			}
 
 			.canvas-app-progress {
@@ -38,12 +41,6 @@
 			  line-height: 20px;
 			}
 
-			.button {
-			  color: #fff;
-			  background-color: #1e64ea;
-			  border-color: transparent;
-			  padding: 10px 20px;
-			}
 		</style>
 
 		
@@ -56,12 +53,10 @@
 	    <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="480" height="720"></canvas>
 	</div>
 
-	<button id="fullscreen" class="button">Fullscreen</button>
-
 	<!-- -->
 	  
 	  <script type='text/javascript' src="dmloader.js"></script>
-	  <script type='text/javascript' src="BeachDrive.js" async onload=""></script>
+	  <script type='text/javascript' src="Beach Drive.js" async onload=""></script>
 	<!-- -->
 
 	<script type='text/javascript'>
@@ -69,6 +64,8 @@
 			archive_location_filter: function( path ) {
 				return ("archive" + path + "");
 			},
+			
+			engine_arguments: ["--verify-graphics-calls=false"],
             
 			splash_image: "splash_image.png",
 			custom_heap_size: 268435456
@@ -76,10 +73,6 @@
 
         Module.runApp("canvas", extra_params);
 
-	    /* Fullscreen button */
-	    document.getElementById("fullscreen").onclick = function (e) {
-	      Module.toggleFullscreen();
-	    };
 	</script>
 </body>
 </html>
