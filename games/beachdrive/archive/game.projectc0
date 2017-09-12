@@ -1,6 +1,6 @@
 [project]
-title = BeachDrive
-version = 0.1.0
+title = Beach Drive
+version = 1.1.0
 custom_resources = main/content/
 
 [bootstrap]
@@ -29,14 +29,19 @@ app_icon_72x72 = /main/images/icons/icon072.png
 app_icon_96x96 = /main/images/icons/icon096.png
 app_icon_144x144 = /main/images/icons/icon144.png
 app_icon_192x192 = /main/images/icons/icon192.png
+manifest = /main/template/manifest/paid/AndroidManifest.xml
+version_code = 2
 
 [html5]
 include_dev_tool = 0
-htmlfile = 
+htmlfile = /main/template/index_itch.html
 
 [profiler]
 track_cpu = 0
 
 [graphics]
 texture_profiles = /main/template/main.texture_profiles
+
+[tracking]
+app_id = BA16E418BC975345
 
