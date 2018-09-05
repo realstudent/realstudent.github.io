@@ -47,7 +47,7 @@ texture_profiles = /builtins/graphics/default.texture_profiles
 app_id = BA16E418BC975345
 
 [native_extension]
-app_manifest = 
+app_manifest = /main/template/main.appmanifest
 
 [sprite]
 max_count = 256
