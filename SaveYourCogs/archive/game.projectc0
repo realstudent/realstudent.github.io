@@ -42,7 +42,7 @@ default_texture_mag_filter = linear
 max_draw_calls = 1024
 max_characters = 8192
 max_debug_vertices = 10000
-texture_profiles = /builtins/graphics/default.texture_profiles
+texture_profiles = /main/other/main.texture_profiles
 
 [sound]
 gain = 1
@@ -95,7 +95,7 @@ bundle_identifier = example.unnamed
 infoplist = /builtins/manifests/ios/Info.plist
 
 [android]
-version_code = 1
+version_code = 3
 package = com.drunk.chip.robotics.save.your.cogs
 manifest = /builtins/manifests/android/AndroidManifest.xml
 iap_provider = GooglePlay
@@ -150,5 +150,5 @@ track_cpu = 0
 settings = /liveupdate.settings
 
 [native_extension]
-app_manifest = 
+app_manifest = /main/other/main.appmanifest
 
