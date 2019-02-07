@@ -1,6 +1,6 @@
 [project]
 title = SaveYourCogs
-version = 0.5.2
+version = 0.5.5
 write_log = 0
 compress_archive = 1
 
@@ -118,7 +118,7 @@ bundle_identifier = example.unnamed
 [html5]
 custom_heap_size = 0
 include_dev_tool = 0
-htmlfile = /builtins/manifests/web/engine_template.html
+htmlfile = /main/other/index.html
 archive_location_prefix = archive
 
 [particle_fx]
