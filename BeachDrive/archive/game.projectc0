@@ -1,6 +1,6 @@
 [project]
 title = Beach Drive
-version = 3.1.0
+version = 3.6.0
 write_log = 0
 compress_archive = 1
 
@@ -42,7 +42,7 @@ default_texture_mag_filter = linear
 max_draw_calls = 1024
 max_characters = 8192
 max_debug_vertices = 10000
-texture_profiles = /builtins/graphics/default.texture_profiles
+texture_profiles = /main/template/main.texture_profiles
 
 [sound]
 gain = 1
@@ -63,7 +63,7 @@ game_binding = /input/game.input_bindingc
 use_accelerometer = 0
 
 [sprite]
-max_count = 256
+max_count = 128
 subpixels = 1
 
 [spine]
@@ -120,6 +120,7 @@ custom_heap_size = 0
 include_dev_tool = 0
 htmlfile = /builtins/manifests/web/engine_template.html
 archive_location_prefix = archive
+engine_arguments = --verify-graphics-calls=false
 
 [particle_fx]
 max_count = 64
@@ -150,5 +151,5 @@ track_cpu = 0
 settings = /liveupdate.settings
 
 [native_extension]
-app_manifest = 
+app_manifest = /main/template/main.appmanifest
 
