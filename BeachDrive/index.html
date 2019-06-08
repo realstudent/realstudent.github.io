@@ -27,12 +27,6 @@
 		position: relative;
 	}
 
-	.canvas-app-container:-webkit-full-screen {
-		/* Auto width and height in Safari/Chrome fullscreen. */
-		width: auto;
-		height: auto;
-	}
-
 	.canvas-app-canvas {
 		max-height: 100vh;
 		max-width: 100%;
@@ -71,8 +65,6 @@
 	<div id="app-container" class="canvas-app-container">
 		<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="480" height="720"></canvas>
 	</div>
-
-	<button id="fullscreen" class="button">Fullscreen</button>
 
 	<!-- -->
 	
@@ -114,11 +106,6 @@
 		}
 		document.head.appendChild(engineJS);
 	}
-
-	/* Fullscreen button */
-	document.getElementById("fullscreen").onclick = function (e) {
-		Module.toggleFullscreen();
-	};
 
 	</script>
 	<script id='engine-start' type='text/javascript'>
