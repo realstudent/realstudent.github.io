@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Beach Drive 3.6.0</title>
+	<title>Beach Drive Free 4.0.0</title>
 	<style type='text/css'>
 	/* Disable user selection to avoid strange bug in Chrome on Windows:
 	* Selecting a text outside the canvas, then clicking+draging would
@@ -25,6 +25,12 @@
 		background: rgb(255,255,255) no-repeat center url("try_game.png");
 		/* A positioned parent for loading visuals */
 		position: relative;
+	}
+
+	.canvas-app-container:-webkit-full-screen {
+		/* Auto width and height in Safari/Chrome fullscreen. */
+		width: auto;
+		height: auto;
 	}
 
 	.canvas-app-canvas {
@@ -91,7 +97,7 @@
 		// dmengine*.wasm is hardcoded in the built JS loader for WASM,
 		// we need to replace it here with the correct project name.
 		if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
-			path = "BeachDrive.wasm";
+			path = "BeachDriveFree.wasm";
 		}
 		return scriptDirectory + path;
 	};
@@ -100,9 +106,9 @@
 		var engineJS = document.createElement('script');
 		engineJS.type = 'text/javascript';
 		if (Module['isWASMSupported']) {
-		    engineJS.src = 'BeachDrive_wasm.js';
+		    engineJS.src = 'BeachDriveFree_wasm.js';
 		} else {
-		    engineJS.src = 'BeachDrive_asmjs.js';
+		    engineJS.src = 'BeachDriveFree_asmjs.js';
 		}
 		document.head.appendChild(engineJS);
 	}

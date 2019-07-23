@@ -1,8 +1,9 @@
 [project]
-title = Beach Drive
-version = 3.6.0
+title = Beach Drive Free
+version = 4.0.0
 write_log = 0
 compress_archive = 1
+bundle_resources = /main/bundle
 
 [display]
 width = 480
@@ -95,19 +96,21 @@ bundle_identifier = example.unnamed
 infoplist = /builtins/manifests/ios/Info.plist
 
 [android]
-version_code = 4
-package = com.drunk.chip.robotics.beachdrive
-manifest = /main/template/manifest/paid/AndroidManifest.xml
+version_code = 52
+minimum_sdk_version = 9
+target_sdk_version = 28
+package = com.drunk.chip.robotics.beachdrivefree
+manifest = /builtins/manifests/android/AndroidManifest.xml
 iap_provider = GooglePlay
 input_method = KeyEvent
-immersive_mode = 0
+immersive_mode = 1
 debuggable = 0
-app_icon_36x36 = /main/images/icons/icon036.png
-app_icon_48x48 = /main/images/icons/icon048.png
-app_icon_72x72 = /main/images/icons/icon072.png
-app_icon_96x96 = /main/images/icons/icon096.png
-app_icon_144x144 = /main/images/icons/icon144.png
-app_icon_192x192 = /main/images/icons/icon192.png
+app_icon_36x36 = /main/images/icons/icon_andr_036.png
+app_icon_48x48 = /main/images/icons/icon_andr_048.png
+app_icon_72x72 = /main/images/icons/icon_andr_072.png
+app_icon_96x96 = /main/images/icons/icon_andr_096.png
+app_icon_144x144 = /main/images/icons/icon_andr_144.png
+app_icon_192x192 = /main/images/icons/icon_andr_192.png
 
 [osx]
 infoplist = /builtins/manifests/osx/Info.plist
